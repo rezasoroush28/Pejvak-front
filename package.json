@@ -1,0 +1,13 @@
+{
+  "name": "pejvak-modular-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/plugin-host.js && node --check dist/plugins/piano/plugin.js && node --check dist/plugins/logo/plugin.js",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {"playwright":"1.64.1","@axe-core/playwright":"4.11.1"}
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "file": "piano-opening-desktop.webm",
+    "bytes": 127539,
+    "width": 640,
+    "height": 640,
+    "fps": 30,
+    "duration": 2.8,
+    "audio": false,
+    "sha256": "e7bb044ba036c6a0c244bdc2d3af81245f8f99ccd7f4138bca8c0166afc3ded6"
+  },
+  {
+    "file": "piano-opening-desktop.mp4",
+    "bytes": 170383,
+    "width": 640,
+    "height": 640,
+    "fps": 30,
+    "duration": 2.8,
+    "audio": false,
+    "sha256": "f9053dedc1e494a6c6387af64bc1b24c4a440ddb236b217108abbd4ef2cd7e35"
+  },
+  {
+    "file": "piano-start-desktop.webp",
+    "bytes": 12174,
+    "width": 640,
+    "height": 640
+  },
+  {
+    "file": "piano-end-desktop.webp",
+    "bytes": 35102,
+    "width": 640,
+    "height": 640
+  },
+  {
+    "file": "piano-opening-mobile.webm",
+    "bytes": 45206,
+    "width": 320,
+    "height": 320,
+    "fps": 24,
+    "duration": 2.7916666666666665,
+    "audio": false,
+    "sha256": "23a7d0509d122ab2929b9f73ea100f9bdef6953f52ba91887e9c01ceff1ac976"
+  },
+  {
+    "file": "piano-opening-mobile.mp4",
+    "bytes": 53874,
+    "width": 320,
+    "height": 320,
+    "fps": 24,
+    "duration": 2.7916666666666665,
+    "audio": false,
+    "sha256": "80091d0ea93dfd6d94f75e14eb60453b1f60595d87a6d01856db899aef0493e8"
+  },
+  {
+    "file": "piano-start-mobile.webp",
+    "bytes": 4900,
+    "width": 320,
+    "height": 320
+  },
+  {
+    "file": "piano-end-mobile.webp",
+    "bytes": 11952,
+    "width": 320,
+    "height": 320
+  }
+]

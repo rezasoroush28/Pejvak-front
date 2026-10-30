@@ -1,0 +1,26 @@
+/* Component styles only. No page, button, or host-container selectors. */
+.pejvak-logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  contain: layout paint;
+  isolation: isolate;
+  background: #080411;
+}
+.pejvak-logo__image,
+.pejvak-logo__video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+.pejvak-logo__video { opacity: 0; }
+.pejvak-logo[data-frame="video"] .pejvak-logo__video { opacity: 1; }
+.pejvak-logo__end { visibility: hidden; }
+.pejvak-logo[data-frame="end"] .pejvak-logo__end { visibility: visible; }
+.pejvak-logo[data-frame="end"] .pejvak-logo__video { opacity: 0; }

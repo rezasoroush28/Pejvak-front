@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080411">
+  <meta name="description" content="A little room for your music. Watch the Pejvak piano open, follow a melody, and make your own notes on a playful mini piano.">
+  <title>Pejvak — A little room for your music</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./assets/fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./plugins/logo/pejvak-logo.css">
+  <link rel="stylesheet" href="./plugins/piano/piano.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#instrument">Skip to the piano</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Pejvak home">pejvak<span aria-hidden="true">.</span></a>
+      <div class="header-actions"><button class="quiet-button" id="help-open" aria-label="How to play"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1.5 1-1.5 1.5-1.5 2.5M12 16.5v.1"/></svg><span>How to play</span></button><button class="sound-button" id="site-sound" aria-label="Enable piano sound"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4V5ZM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></svg><span>Enable sound</span></button></div>
+    </header>
+
+    <main>
+      <section class="introduction" aria-labelledby="page-title">
+        <div class="logo-slot" id="logo-slot" data-plugin-slot="logo"></div>
+        <div class="intro-copy"><h1 id="page-title">A little room for your music.</h1><p>Listen for a moment. Then make it yours.</p></div>
+      </section>
+      <section id="instrument" class="instrument-slot" aria-label="Interactive mini piano" data-plugin-slot="piano"></section>
+      <noscript><p class="noscript-note">Turn on JavaScript to open the piano and play your own notes.</p></noscript>
+    </main>
+
+    <footer class="site-footer"><span>Small keys. Endless possibilities.</span><button id="credits-open">Music & sound credits</button></footer>
+  </div>
+
+  <dialog class="site-dialog" id="help" aria-labelledby="help-title">
+    <button class="dialog-close" aria-label="Close help">×</button><span class="dialog-symbol" aria-hidden="true">♫</span><h2 id="help-title">Your turn sounds good.</h2>
+    <p>The piano starts its melody after the logo opens. If your browser needs a first tap, choose <strong>Enable sound</strong>.</p>
+    <p>Tap any piano key to take over. Your sounds and notes appear together. Hold a few keys for a chord.</p>
+    <p>After you stop playing for <strong>15 seconds</strong>, the melody gently picks up where it paused. Use Pause whenever you want quiet.</p>
+    <div class="keyboard-guide"><span>Try these on your keyboard</span><div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd><kbd>K</kbd></div><p>C &nbsp; D &nbsp; E &nbsp; F &nbsp; G &nbsp; A &nbsp; B &nbsp; C</p></div>
+    <p class="fine-print">The little piano lights matching note names across the song’s octaves. The staff follows the actual pitches. It’s a place to explore, with a simplified pitch guide.</p>
+    <button class="primary-button dialog-done">Let’s play</button>
+  </dialog>
+  <dialog class="site-dialog" id="credits" aria-labelledby="credits-title">
+    <button class="dialog-close" aria-label="Close credits">×</button><h2 id="credits-title">Behind the music.</h2>
+    <p><strong>Victor’s Piano Solo</strong> from <em>Corpse Bride</em>, composed by Danny Elfman. This is the simplified, transposed <a href="https://musicboxmaniacs.com/explore/melody/corpse-bride-victors-piano-solo_68451/" target="_blank" rel="noopener noreferrer">music-box arrangement by SinfoniaItaliana</a> used in the piano lab.</p>
+    <p><strong>Salamander Grand Piano</strong> samples by Alexander Holm, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>, via Tone.js Piano. MIDI parser: @tonejs/midi, MIT. Fonts: DM Sans and Instrument Serif, SIL Open Font License.</p>
+  </dialog>
+</body>
+</html>

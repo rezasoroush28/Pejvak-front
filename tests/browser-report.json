@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-30T07:57:59.095Z",
+  "checks": [
+    "Logo completes before the piano starts; sampled sound, moving keys and live score",
+    "Manual chords stop the song, show their notes, release sound, freeze song position",
+    "Real 15-second idle resume (15008ms), reset by a later key, continuing saved position",
+    "Mute/unmute output, sharp notes, explicit Pause cancels the idle countdown",
+    "Dialog shortcut suppression, Escape close and focused-key Enter activation",
+    "320px responsive layout, dark sheet",
+    "375px responsive layout, dark sheet",
+    "390px responsive layout, dark sheet, two-finger chord and axe accessibility",
+    "768px responsive layout, dark sheet",
+    "Reduced motion skips video and still hands off to the piano",
+    "Real browser audio restriction: Enable sound starts the melody"
+  ],
+  "browsers": {
+    "firefox": "Playback and manual takeover passed",
+    "webkit": "Windows runner has no Web Audio; stalled-video static fallback and manual notation passed. Safari audio unverified."
+  },
+  "idleResumeMs": 15008,
+  "desktopAxe": 44,
+  "normalConsoleErrors": [],
+  "desktopCls": 0.00020268213342737273,
+  "mobileAxe": 44
+}
